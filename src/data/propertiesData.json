@@ -1,0 +1,274 @@
+[
+  {
+      "id": 1,
+      "title": "Luxury Apartment",
+      "description": "A cozy and comfortable home for your family.",
+      "price": 352125,
+      "location": "New Delhi",
+      "bedrooms": 3,
+      "amenities": [
+          "Elevator",
+          "Garage",
+          "Gym",
+          "Pool",
+          "Garden"
+      ],
+      "image": "luxary-appartment-1.jpg"
+  },
+  {
+      "id": 2,
+      "title": "Cozy House",
+      "description": "A studio apartment perfect for singles and couples.",
+      "price": 480109,
+      "location": "Bangloor",
+      "bedrooms": 4,
+      "amenities": [
+          "Gym",
+          "Garden"
+      ],
+      "image": "luxary-appartemnt-9.jpg"
+  },
+  {
+      "id": 3,
+      "title": "Cozy House",
+      "description": "A spacious villa with a garden and private pool.",
+      "price": 124786,
+      "location": "Telangana",
+      "bedrooms": 3,
+      "amenities": [
+          "Garden"
+      ],
+      "image": "luxary-appartemnt-6.jpg"
+  },
+  {
+      "id": 4,
+      "title": "Luxury Apartment",
+      "description": "Modern amenities and stylish interiors for a luxurious living.",
+      "price": 254381,
+      "location": "Hyderabad",
+      "bedrooms": 1,
+      "amenities": [
+          "Pool",
+          "Garage",
+          "Garden"
+      ],
+      "image": "luxary-appartemnt-7.jpg"
+  },
+  {
+      "id": 5,
+      "title": "Modern Condo",
+      "description": "A cozy and comfortable home for your family.",
+      "price": 94407,
+      "location": "New Delhi",
+      "bedrooms": 2,
+      "amenities": [
+          "Pool",
+          "Garage",
+          "Gym"
+      ],
+      "image": "modern-condo.jpg"
+  },
+  {
+      "id": 6,
+      "title": "Modern Condo",
+      "description": "A beautiful property located in the heart of the city.",
+      "price": 100796,
+      "location": "New Delhi",
+      "bedrooms": 4,
+      "amenities": [
+          "Garden",
+          "Garage",
+          "Elevator"
+      ],
+      "image": "modern-condo.jpg"
+  },
+  {
+      "id": 7,
+      "title": "Cozy House",
+      "description": "Modern amenities and stylish interiors for a luxurious living.",
+      "price": 441685,
+      "location": "Telangana",
+      "bedrooms": 4,
+      "amenities": [
+          "Elevator",
+          "Garage",
+          "Garden",
+          "Gym"
+      ],
+      "image": "spacious-villa-2.jpg"
+  },
+  {
+      "id": 8,
+      "title": "Downtown Studio",
+      "description": "A beautiful property located in the heart of the city.",
+      "price": 285809,
+      "location": "New Delhi",
+      "bedrooms": 2,
+      "amenities": [
+          "Elevator",
+          "Garage",
+          "Gym",
+          "Pool",
+          "Garden"
+      ],
+      "image": "downtown-studio-1.jpg"
+  },
+  {
+      "id": 9,
+      "title": "Luxury Apartment",
+      "description": "A spacious villa with a garden and private pool.",
+      "price": 144112,
+      "location": "Bangloor",
+      "bedrooms": 2,
+      "amenities": [
+          "Garage",
+          "Elevator"
+      ],
+      "image": "luxary-appartemnt-4.jpg"
+  },
+  {
+      "id": 10,
+      "title": "Spacious Villa",
+      "description": "A spacious villa with a garden and private pool.",
+      "price": 394990,
+      "location": "Hyderabad",
+      "bedrooms": 3,
+      "amenities": [
+          "Garage",
+          "Pool",
+          "Garden",
+          "Elevator"
+      ],
+      "image": "spacious-villa-1.jpg"
+  },
+  {
+      "id": 11,
+      "title": "Luxury Apartment",
+      "description": "A cozy and comfortable home for your family.",
+      "price": 250339,
+      "location": "Telangana",
+      "bedrooms": 4,
+      "amenities": [
+          "Gym"
+      ],
+      "image": "luxary-appartment-3.jpg"
+  },
+  {
+      "id": 12,
+      "title": "Spacious Villa",
+      "description": "A beautiful property located in the heart of the city.",
+      "price": 406308,
+      "location": "Bengloor",
+      "bedrooms": 5,
+      "amenities": [
+          "Gym"
+      ],
+      "image": "spacious-villa-3.jpg"
+  },
+  {
+      "id": 13,
+      "title": "Modern Condo",
+      "description": "A cozy and comfortable home for your family.",
+      "price": 392282,
+      "location": "Hyderabad",
+      "bedrooms": 4,
+      "amenities": [
+          "Gym"
+      ],
+      "image": "modern-condo.jpg"
+  },
+  {
+      "id": 14,
+      "title": "Luxury Apartment",
+      "description": "A spacious villa with a garden and private pool.",
+      "price": 157402,
+      "location": "Hyderabad",
+      "bedrooms": 1,
+      "amenities": [
+          "Gym",
+          "Garage",
+          "Pool",
+          "Garden"
+      ],
+      "image": "luxary-appartemnt-5.jpg"
+  },
+  {
+      "id": 15,
+      "title": "Luxury Apartment",
+      "description": "A studio apartment perfect for singles and couples.",
+      "price": 56097,
+      "location": "New Delhi",
+      "bedrooms": 4,
+      "amenities": [
+          "Pool",
+          "Gym"
+      ],
+      "image": "luxary-appartemnt-8.jpg"
+  },
+  {
+      "id": 16,
+      "title": "Spacious Villa",
+      "description": "Modern amenities and stylish interiors for a luxurious living.",
+      "price": 115199,
+      "location": "Telangana",
+      "bedrooms": 5,
+      "amenities": [
+          "Gym"
+      ],
+      "image": "spacious-villa-2.jpg"
+  },
+  {
+      "id": 17,
+      "title": "Downtown Studio",
+      "description": "A cozy and comfortable home for your family.",
+      "price": 451955,
+      "location": "Vikarabad",
+      "bedrooms": 1,
+      "amenities": [
+          "Gym",
+          "Elevator",
+          "Garden"
+      ],
+      "image": "downtown-studio-1.jpg"
+  },
+  {
+      "id": 18,
+      "title": "Luxury Apartment",
+      "description": "Modern amenities and stylish interiors for a luxurious living.",
+      "price": 413696,
+      "location": "Mumbai",
+      "bedrooms": 5,
+      "amenities": [
+          "Elevator",
+          "Gym"
+      ],
+      "image": "luxary-appartemnt-6.jpg"
+  },
+  {
+      "id": 19,
+      "title": "Modern Condo",
+      "description": "A cozy and comfortable home for your family.",
+      "price": 430664,
+      "location": "Mumbai",
+      "bedrooms": 2,
+      "amenities": [
+          "Gym"
+      ],
+      "image": "modern-condo.jpg"
+  },
+  {
+      "id": 20,
+      "title": "Spacious Villa",
+      "description": "A studio apartment perfect for singles and couples.",
+      "price": 368426,
+      "location": "Haryana",
+      "bedrooms": 3,
+      "amenities": [
+          "Garage",
+          "Gym",
+          "Elevator",
+          "Pool"
+      ],
+      "image": "spacious-villa-1.jpg"
+  }
+]
