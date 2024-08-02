@@ -9,13 +9,22 @@ const Header = () => {
     const [isActive, setIsActive] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const dropdownRef = useRef(null);
+    const menuRef = useRef(null);
 
     const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
-    
+
     const handleClickOutside = (event) => {
-        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        if (
+            (dropdownRef.current && !dropdownRef.current.contains(event.target)) &&
+            (menuRef.current && !menuRef.current.contains(event.target))
+        ) {
             setIsActive(false);
+            setIsMenuOpen(false);
         }
+    };
+
+    const handleNavLinkClick = () => {
+        setIsMenuOpen(false); // Close the menu when a navigation link is clicked
     };
 
     useEffect(() => {
@@ -33,10 +42,11 @@ const Header = () => {
                         className="menu-button" 
                         aria-label="Menu" 
                         onClick={() => setIsMenuOpen(prev => !prev)}
+                        ref={menuRef}
                     >
                         <MdOutlineMenu className="menu-icon" />
                     </button>
-                    <Link to="/" className="nav-link">
+                    <Link to="/" className="nav-link" onClick={handleNavLinkClick}>
                         <h1>Properties App</h1>
                     </Link>
                 </div>
@@ -44,13 +54,13 @@ const Header = () => {
                 <nav className={`nav-container ${isMenuOpen ? 'open' : ''}`}>
                     <ul className="nav-links">
                         <li>
-                            <Link to="/" className="nav-link">Home</Link>
+                            <Link to="/" className="nav-link" onClick={handleNavLinkClick}>Home</Link>
                         </li>
                         <li>
-                            <Link to="/properties" className="nav-link">Properties</Link>
+                            <Link to="/properties" className="nav-link" onClick={handleNavLinkClick}>Properties</Link>
                         </li>
                         <li>
-                            <Link to="/cartlist" className="nav-link">Cart</Link>
+                            <Link to="/cartlist" className="nav-link" onClick={handleNavLinkClick}>Cart</Link>
                         </li>
                     </ul>
                 </nav>
@@ -69,7 +79,8 @@ const Header = () => {
                     </button>
                     {isActive && (
                         <div className="profile-drop-box" ref={dropdownRef}>
-                            <h3>Hey, {user.nickname}</h3>
+                            <h3>Hey, {user.nickname.slice(0, 1).toUpperCase() + user.nickname.slice(1)}</h3>
+                            <Link className="nav-link" style={{marginBottom: "6px"}} to='/my-orders'>My Orders</Link>
                             <button className="login-logout-btn" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
                                 Logout
                             </button>                           

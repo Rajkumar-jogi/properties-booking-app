@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import Properties from './components/Properties';
+import ViewOrders from './components/ViewOrders'
 import CartList from './components/CartList';
 import { useAuth0 } from "@auth0/auth0-react";
 import { useEffect } from 'react';
@@ -49,6 +50,10 @@ function App() {
         <Route 
           path='/cartList' 
           element={isAuthenticated ? <CartList /> : null} 
+        />
+        <Route 
+          path='/my-orders' 
+          element={isAuthenticated ? <ViewOrders /> : null} 
         />
       </Routes>
     </div>

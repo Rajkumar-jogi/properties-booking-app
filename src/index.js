@@ -7,6 +7,8 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { Auth0Provider } from '@auth0/auth0-react';
 
+import { CartProvider } from './context/CartContext';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const onRedirectCallback = (appState) => {
@@ -25,7 +27,9 @@ root.render(
     onRedirectCallback={onRedirectCallback}
   >
     <BrowserRouter>
-        <App />
+      <CartProvider>
+          <App />
+      </CartProvider>  
     </BrowserRouter>
   </Auth0Provider>
 )

@@ -1,0 +1,31 @@
+.orders-container {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin: 60px auto;
+  min-height: calc(100vh - 120px); /* Ensure full height responsiveness */
+}
+
+@media screen and (max-width: 767px) {
+  .orders-container{
+    margin-top: 120px;
+  }
+}
+
+.orders-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.orders-container li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.orders-container h3 {
+  margin: 0;
+}
+
+.orders-container h4 {
+  margin: 5px 0;
+}

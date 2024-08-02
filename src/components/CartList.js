@@ -1,37 +1,53 @@
-import { useState, useEffect } from 'react';
-import { Circles } from 'react-loader-spinner';
-import '../styles/cartList.css'; // Make sure you have the correct CSS file
+import React, { useContext } from 'react';
+import { CartContext } from '../context/CartContext';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+import CheckoutForm from './CheckoutForm';
+import '../styles/cartList.css';
 
 const CartList = () => {
-  const [isLoading, setIsLoading] = useState(true); // Set initial loading state to true
+  const { cartItems, removeFromCart, totalAmount, addOrder, setCartItems } = useContext(CartContext);
 
-  useEffect(() => {
-    // Simulate a data fetching process
-    const fetchData = async () => {
-      setIsLoading(true);
-      // Simulate a delay
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-      setIsLoading(false);
+  const handleOrderSuccess = () => {
+    const newOrder = {
+      items: cartItems,
+      totalAmount,
+      status: 'Order Placed',
+      date: new Date().toISOString(),
     };
+    addOrder(newOrder);
+    setCartItems([]); // Clear cart items after successful order
+  };
 
-    fetchData();
-  }, []); // Empty dependency array means this useEffect runs only once after the initial render
-
-  if (isLoading) {
-    return (
-      <div className='loading-container'>
-        <Circles
-          height="80"
-          width="80"
-          color="#6B66F3"
-          ariaLabel="circles-loading"
-          visible={true}
-        />
-      </div>
-    );
-  }
-
-  return <div className="container"><h1>Show the CartList here</h1></div>;
-}
+  return (
+    <div className="cart-container">
+      {cartItems.length === 0 ? (
+        <p>Your cart is empty.</p>
+      ) : (
+        <div className="cart-list">
+          <h2>Your Cart</h2>
+          {cartItems.map(item => (
+            <div key={item.id} className="cart-item">
+              <img src={require(`../assets/${item.image}`)} alt={item.title} />
+              <div className="cart-item-details">
+                <h3>{item.title}</h3>
+                <p><strong>Price:</strong> ₹{item.price}/-</p>
+                <button onClick={() => removeFromCart(item.id)}>Remove from Cart</button>
+              </div>
+            </div>
+          ))}
+          <div className="cart-total">
+            <h3>Total Amount: ₹{totalAmount}/-</h3>
+          </div>
+          <Popup trigger={<button className="checkout-button">Proceed to Checkout</button>} modal>
+            {close => (
+              <CheckoutForm onOrderSuccess={() => { handleOrderSuccess(); close(); }} />
+            )}
+          </Popup>
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default CartList;

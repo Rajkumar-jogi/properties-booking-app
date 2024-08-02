@@ -1,0 +1,59 @@
+.checkout-container {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 2px solid red;
+  z-index: 3001;
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+button {
+  background-color: #6B66F3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #5a54e1;
+}
+  
+  .popup-content {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%; /* Make sure popup content width is responsive */
+  }
+  
+  .checkout-summary {
+    margin-top: 20px;
+  }
+  
