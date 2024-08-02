@@ -80,7 +80,7 @@ const Header = () => {
                     {isActive && (
                         <div className="profile-drop-box" ref={dropdownRef}>
                             <h3>Hey, {user.nickname.slice(0, 1).toUpperCase() + user.nickname.slice(1)}</h3>
-                            <Link className="nav-link" style={{marginBottom: "6px"}} to='/my-orders'>My Orders</Link>
+                            <Link className="nav-link" style={{marginBottom: "16px"}} to='/my-orders'>My Orders</Link>
                             <button className="login-logout-btn" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
                                 Logout
                             </button>                           
